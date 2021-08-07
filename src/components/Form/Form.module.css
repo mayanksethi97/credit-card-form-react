@@ -8,7 +8,6 @@
 
 .flip {
     transition: transform 1s;
-    transform-style: preserve-3d;
 }
 
 .expiry {

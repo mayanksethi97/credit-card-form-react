@@ -1,3 +1,11 @@
+export const CVC_LENGTH = 3;
+export const MAX_CARD_LENGTH = 22;
+export const DEFAULT_CARD_NAME = "ad soyad";
+export const DEFAULT_CARD_NUMBER = "####-####-####-####";
+export const MIN_CARD_LENGTH = 16;
+export const NUMBER_ONLY_REGEX = "[0-9]+";
+
+
 export function getMonths() {
   let months = [];
   for (let i = 1; i <= 12; i++) {
@@ -23,9 +31,9 @@ export function maskCardNumber(cardNumberRef) {
     .match(/(\d{0,4})(\d{0,4})(\d{0,4})(\d{0,4})/);
   cardNumberRef.current.value = !cardValue[2]
     ? cardValue[1]
-    : `${cardValue[1]}-${cardValue[2]}${`${
-        cardValue[3] ? `-${cardValue[3]}` : ""
-      }`}${`${cardValue[4] ? `-${cardValue[4]}` : ""}`}`;
+    : `${cardValue[1]} ${cardValue[2]}${`${
+        cardValue[3] ? ` ${cardValue[3]}` : ""
+      }`}${`${cardValue[4] ? ` ${cardValue[4]}` : ""}`}`;
   return cardNumberRef.current.value;
 }
 
@@ -68,7 +76,6 @@ export function getCardType(cardNum) {
   }
   return payCardType;
 }
-
 
 export const SKIN_OPTIONS = {
   'skin1': "/assets/credit card backgrounds/4.jpeg",

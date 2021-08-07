@@ -1,13 +1,9 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 function useDetectCard(cardNum) {
   const [cardType, setCardType] = useState("");
   const [cardError, setCardError] = useState(false);
 
-  useEffect(() => {
-    detect();
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [cardNum])
 
   function detect() {
     let payCardType = "";
@@ -51,7 +47,7 @@ function useDetectCard(cardNum) {
       setCardError(true);
     }
   }
-  return { cardType, cardError };
+  return { cardType, cardError, detect };
 }
 
 export default useDetectCard;
