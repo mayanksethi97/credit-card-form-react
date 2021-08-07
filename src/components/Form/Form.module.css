@@ -1,0 +1,39 @@
+.uppercase {
+    text-transform: uppercase;
+}
+
+.expiry-box {
+    width: 100px !important;
+}
+
+.flip {
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.expiry {
+    width: 60%;
+    margin-right: 15px;
+}
+
+.rotateBack {
+    transform: rotateY(180deg);
+}
+
+.rotateFront {
+    transform: rotateY(0deg);
+}
+
+.skins {
+    height: 40px;
+    width: 40px;
+    margin-right: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 1s ease;
+    transform: rotate3d(1, 1, 1, 45deg);
+}
+
+.skins:hover {
+    transform: rotate3d(1, 1, 1, 0deg);
+}

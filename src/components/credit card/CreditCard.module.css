@@ -1,0 +1,90 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    color: white;
+}
+
+.card {
+    height: 240px;
+    padding: 20px;
+    position: relative;
+    margin-top: -100px;
+    margin-bottom: 3em;
+    border-radius: 10px;
+    box-shadow: 9px 10px 19px 10px;
+    background-size: cover;
+}
+
+.logo-container {
+    width: 100%
+}
+
+.logo-container img {
+    height: 2em;
+}
+
+.orbitron {
+    font-family: 'Orbitron'
+}
+
+.card-label {
+    line-height: 0;
+    font-size: 10px;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.stripe {
+    background-color: black;
+    height: 4em;
+    position: relative;
+    opacity: 0.8;
+}
+
+.active {
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 5px;
+    transition: all .5s step-start;
+    animation: moveActive 2s;
+}
+
+.back {
+    transform: rotateY(-180deg);
+}
+
+@keyframes moveActive {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.text span {
+    display: inline-block;
+    animation: pop-up 1s cubic-bezier(0.2, 0, 0.5, 1) forwards;
+    animation-delay: calc(var(--i) * 0.2s);
+}
+
+@keyframes pop-up {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: none;
+        opacity: 1;
+    }
+}
+
+.cvv {
+    float: right;
+    color: black
+}
