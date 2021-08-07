@@ -6,8 +6,8 @@ body {
     -moz-osx-font-smoothing: grayscale;
     /* background-color: #3f3d56 !important;
      */
-    background: rgb(61, 61, 67) !important;
-    background: linear-gradient(90deg, rgba(61, 61, 67, 1) 1%, rgba(235, 236, 7, 0.9867297260701156) 29%, rgba(252, 72, 169, 1) 100%)!important;
+    background: #babad2!important;
+    /* background: linear-gradient(90deg, rgba(61, 61, 67, 1) 1%, rgba(235, 236, 7, 0.9867297260701156) 29%, rgba(252, 72, 169, 1) 100%)!important; */
     width: 100vw;
 }
 
